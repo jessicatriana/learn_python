@@ -51,3 +51,43 @@ print(msg[-1])
 print(msg[2:])
 # Prints lcome (everything between the 2nd and 7th positions)
 print(msg[2:7])
+
+# STRING PRACTICE
+
+msg = 'welcome to Python 101: Strings'
+# Goal is to print "1 Welcome Ring To Tyler"
+msg1 = msg[18] + ' ' + msg[:8]+msg[25:29] + msg[7:11] + \
+    msg[13] + msg[12] + msg[2] + msg[1] + msg[-5]
+print(msg1.title())
+
+# Prints the message backwards
+print(msg1[::-1].title())
+
+# Tripel quotes print a multiline string
+msg = """This is a 
+multiline
+string."""
+
+print(msg)
+
+msg = 'Welcome to Python 101: Strings'
+# Prints 11 since it starts at position 11
+print(msg.find("Python"))
+
+# Prints "Welcome to Java 101: Strings" using find and replace
+print(msg.replace('Python', 'Java'))
+
+# Prints "Welcome to C 101: Strings" but this time stored in a variable
+new_msg = msg.replace('Python', 'C')
+print(new_msg)
+
+# Prints false - checks to see if "Python" is in new_message
+print('Python' in new_msg)
+
+# String formatting
+
+name = 'TERRY'
+color = 'RED'
+msg = '[' + name + '] loves the color ' + color.lower() + '!'
+# Prints [TERRY] loves the color red!
+print(msg)
