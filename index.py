@@ -91,3 +91,72 @@ color = 'RED'
 msg = '[' + name + '] loves the color ' + color.lower() + '!'
 # Prints [TERRY] loves the color red!
 print(msg)
+
+# USER INPUT
+
+# name = input("What is your name?")
+# age = input("What is your age?")
+
+# print('Hello' + name + '! You are ' + age + ' years old.')
+
+# LISTS
+
+friends = ['John', 'Michael', 'Terry', 'Eric', 'Graham']
+
+# Prints whole list
+print(friends)
+
+# Prints 5
+print(len(friends))
+
+# Prints 1
+print(friends.count('Eric'))
+
+friends.sort()
+# Prints the list in A-Z order
+print(friends)
+
+friends.sort(reverse=True)
+# Prints the list in Z-A order
+print(friends)
+
+friends.reverse()
+# Prints the list in A-S order because that is reversed from the current state
+print(friends)
+
+cars = [911, 130, 328, 535, 740, 308]
+
+# Prints lowest number
+print(min(cars))
+# Prints highest number
+print(max(cars))
+
+# Prints the sum of the numbers
+print(sum(cars))
+
+friends.append('TerryG')
+# Prints the list with "TerryG" added to the end
+print(friends)
+
+friends.insert(1, "Jan")
+# Prints the list with "Jan inserted into position 1"
+print(friends)
+
+friends[1] = 'TerryG'
+# Prints the list with "TerryG" in position 1
+print(friends)
+
+friends.extend(cars)
+# Prints the "friends" list with the "cars" list added to the end
+print(friends)
+
+friends.remove('Terry')
+# Prints the list without "Terry"
+print(friends)
+
+friends.pop()
+# Prints the list without the last name
+print(friends)
+
+# del friends
+# Deletes the friends list entirely
